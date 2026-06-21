@@ -15,15 +15,15 @@ export const metadata: Metadata = {
   description: "Live trading, pure price action, and no BS.",
   manifest: "/manifest.json",
   icons: {
-    icon: "/indian_operator_portrait.png",
-    apple: "/indian_operator_portrait.png",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
-    images: ["/indian_operator_portrait.png"],
+    images: ["/logo.png"],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/indian_operator_portrait.png"],
+    images: ["/logo.png"],
   }
 };
 
