@@ -23,7 +23,7 @@ export function CandleField({ variant = "background" }: CandleFieldProps) {
       // 60% chance of green, heights between 10% and 50%
       const isBull = Math.random() > 0.4;
       const height = variant === "background" 
-        ? Math.floor(Math.random() * 30) + 10  // Heights between 10% and 40%
+        ? Math.floor(Math.random() * 45) + 15  // Heights between 15% and 60%
         : Math.floor(Math.random() * 80) + 20;
       // Stagger animation based on index
       const delay = Math.random() * 0.5;
