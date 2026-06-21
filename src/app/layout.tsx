@@ -14,6 +14,17 @@ export const metadata: Metadata = {
   title: "Indian Operator | Master the Markets",
   description: "Live trading, pure price action, and no BS.",
   manifest: "/manifest.json",
+  icons: {
+    icon: "/indian_operator_portrait.png",
+    apple: "/indian_operator_portrait.png",
+  },
+  openGraph: {
+    images: ["/indian_operator_portrait.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/indian_operator_portrait.png"],
+  }
 };
 
 export default function RootLayout({
