@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-card-border: var(--card-border);
+  --color-bull: var(--bull);
+  --color-bear: var(--bear);
+  --color-gold: var(--gold);
+  --color-ice: var(--ice);
+  
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-pulse-ring: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #080b0a;
+  --bg-elevated: #0e1412;
+  --card-border: #1c2622;
+  --bull: #00e676;
+  --bear: #ff4757;
+  --gold: #ffb300;
+  --ice: #4fc3f7;
+  --insta-gradient: linear-gradient(135deg, #f95caa, #a25bf0);
+  --text: #f2f5f3;
+  --text-mute: #8a958f;
+  --text-faint: #4d5752;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+@layer utilities {
+  .insta-gradient-bg {
+    background: var(--insta-gradient);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
