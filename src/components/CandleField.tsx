@@ -43,7 +43,7 @@ export function CandleField({ variant = "background" }: CandleFieldProps) {
   return (
     <div 
       className={`flex items-end justify-between w-full overflow-hidden ${
-        isBg ? "absolute inset-0 z-0 opacity-20 pointer-events-none" : "h-12 w-full my-8 opacity-40"
+        isBg ? "absolute inset-0 z-0 opacity-20 pointer-events-none" : "h-16 sm:h-20 w-full my-4 sm:my-8 opacity-50"
       }`}
       aria-hidden="true"
       style={isBg ? { maskImage: "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)" } : undefined}

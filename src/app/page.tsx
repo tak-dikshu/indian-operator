@@ -16,7 +16,6 @@ export default function Home() {
       <TickerBar />
       
       <Hero />
-      <CandleField variant="divider" />
       
       <PlatformCards />
       <CandleField variant="divider" />
