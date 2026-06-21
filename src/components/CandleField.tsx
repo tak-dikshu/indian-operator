@@ -23,7 +23,7 @@ export function CandleField({ variant = "background" }: CandleFieldProps) {
       // 60% chance of green, heights between 10% and 50%
       const isBull = Math.random() > 0.4;
       const height = variant === "background" 
-        ? Math.floor(Math.random() * 20) + 5  // Heights between 5% and 25%
+        ? Math.floor(Math.random() * 30) + 10  // Heights between 10% and 40%
         : Math.floor(Math.random() * 80) + 20;
       // Stagger animation based on index
       const delay = Math.random() * 0.5;
@@ -43,7 +43,7 @@ export function CandleField({ variant = "background" }: CandleFieldProps) {
   return (
     <div 
       className={`flex items-end justify-between w-full overflow-hidden ${
-        isBg ? "absolute inset-0 z-0 opacity-15 pointer-events-none" : "h-12 w-full my-8 opacity-40"
+        isBg ? "absolute inset-0 z-0 opacity-20 pointer-events-none" : "h-12 w-full my-8 opacity-40"
       }`}
       aria-hidden="true"
       style={isBg ? { maskImage: "linear-gradient(to bottom, transparent, black 20%, black 80%, transparent)" } : undefined}
