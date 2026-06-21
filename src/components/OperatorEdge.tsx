@@ -4,7 +4,7 @@ import { RevealOnScroll } from "./RevealOnScroll";
 
 export function OperatorEdge() {
   return (
-    <section className="py-20 px-4 max-w-7xl mx-auto w-full">
+    <section className="py-20 px-4 max-w-7xl mx-auto w-full hidden md:block">
       <RevealOnScroll className="mb-12">
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">The Operator Edge</h2>
         <p className="text-[var(--text-mute)] font-sans max-w-2xl">

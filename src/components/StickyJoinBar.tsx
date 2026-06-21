@@ -38,14 +38,14 @@ export function StickyJoinBar() {
             INDIAN OPERATOR
           </div>
           
-          <div className="flex-1 flex justify-center gap-2 sm:gap-4 overflow-x-auto no-scrollbar">
+          <div className="flex-1 flex justify-center gap-1.5 sm:gap-4 overflow-x-auto no-scrollbar">
             {buttons.map((btn, idx) => (
               <a
                 key={idx}
                 href={btn.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`px-4 py-1.5 rounded text-xs sm:text-sm font-bold border whitespace-nowrap transition-colors ${btn.color}`}
+                className={`px-2.5 py-1 sm:px-4 sm:py-1.5 rounded text-[10px] sm:text-sm font-bold border whitespace-nowrap transition-colors ${btn.color}`}
               >
                 {btn.name}
               </a>
