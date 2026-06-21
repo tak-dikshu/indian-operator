@@ -21,8 +21,10 @@ export default function Home() {
       <PlatformCards />
       <CandleField variant="divider" />
       
-      <OperatorEdge />
-      <CandleField variant="divider" />
+      <div className="hidden md:block w-full">
+        <OperatorEdge />
+        <CandleField variant="divider" />
+      </div>
       
       <RecentStreams />
       <CandleField variant="divider" />
